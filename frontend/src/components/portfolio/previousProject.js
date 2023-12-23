@@ -19,7 +19,7 @@ const PreviousProject = (props) => {
               height='300'
               image={item.image}
               alt='Lankan Health'
-              sx={{ overflowY: "scroll" }}
+              sx={{}}
             />
 
             <CardContent>
