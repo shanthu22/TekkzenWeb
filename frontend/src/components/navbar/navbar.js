@@ -8,7 +8,7 @@ import Button from 'react-bootstrap/Button';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 const CustomNavbar = () => {
   return (
-    <div>
+  
       <Navbar expand="lg" style={{ 'background-color': 'whitesmoke' }}>
         <Container>
           <Navbar.Brand href="#home">
@@ -28,7 +28,7 @@ const CustomNavbar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </div>
+    
   );
 };
 
