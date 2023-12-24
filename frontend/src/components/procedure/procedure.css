@@ -1,0 +1,56 @@
+.procedure{
+    /* display: flex;  */
+    background-color:  rgb(39, 39, 39);
+    color: white; 
+    border-radius: 5px;
+    margin: 12px;
+    padding: 20px 15px;
+    font:16px  Roboto, Helvetica,Arial, sans-serif
+}
+
+.procedure-step{
+    display: flex;
+   
+    align-items: center;
+    text-align: left;
+}
+
+.procedure-step-count{
+    border: 2px solid white;
+    border-radius: 50%;
+    margin:20px ;
+}
+.procedure-step-count> h3 {
+    margin: 15px;
+}
+.procedure-step-description{
+    text-align: justify;
+}
+
+.procedure-step:hover{
+    .procedure-step-count{border: 2px solid rgb(240, 0, 0);}
+    
+}
+
+@media(max-width:500px){
+    .procedure-step{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+       
+    }
+    .procedure{
+        /* display: flex;  */
+        background-color:   rgb(39, 39, 39);
+        color: white; 
+        border-radius: 0px;
+        
+
+    }
+    .procedure-step-count{
+        border: 2px solid rgb(240, 0, 0);
+        border-radius: 50%;
+        margin:10px 0px 10px 0px ;
+    }
+    
+}

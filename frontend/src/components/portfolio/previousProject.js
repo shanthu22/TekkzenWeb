@@ -11,22 +11,31 @@ const PreviousProject = (props) => {
   return (
     <div>
       {fetchedPreviousProjects.map((item, key) => (
-        <Card sx={{ margin: "30px 0px 30px 0px " }}>
+        <Card
+          sx={{
+            margin: "30px 0px 30px 0px ",
+          }}>
           <CardActionArea>
             <CardMedia
-              style={{ overflowY: "auto" }}
               component='img'
-              height='300'
+              height='400'
               image={item.image}
-              alt='Lankan Health'
-              sx={{}}
+              alt={item.name}
+              sx={{
+                overflowY: "scroll",
+                // Enable scrolling for overflow
+                // Constrain image width to 100% of the container
+              }}
             />
 
             <CardContent>
               <Typography gutterBottom variant='h5' component='div'>
                 {item.name}
               </Typography>
-              <Typography variant='body2' color='text.secondary'>
+              <Typography
+                style={{ textAlign: "justify" }}
+                variant='body2'
+                color='text.secondary'>
                 {item.description}
               </Typography>
             </CardContent>
