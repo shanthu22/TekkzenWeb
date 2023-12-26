@@ -1,13 +1,12 @@
 import React from "react";
 import CustomNavbar from "../../components/navbar/navbar";
-
-const HowWeWork = () => {
+const ContactUs = () => {
   return (
     <div>
       <CustomNavbar />
-      <h1>HOW WE WORK PAGE </h1>
+      <h1>CONTACT US PAGE </h1>
     </div>
   );
 };
 
-export default HowWeWork;
+export default ContactUs;
