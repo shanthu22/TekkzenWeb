@@ -1,0 +1,26 @@
+.aboutUs-Top{
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding: 20px;
+font-size: default;
+}
+
+.aboutUs-Top >p{
+    text-align: justify;
+}
+
+.aboutUs-Img>img{
+    height:auto;
+    width: 50vw;
+
+}
+
+@media (max-width:500px) {
+    .aboutUs-Img>img{
+       
+        width: 80vw;
+        overflow-wrap: wrap;
+    }
+    
+}

@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 
 const PreviousProject = (props) => {
-  console.log(props.PreviousProjectData);
+  // console.log(props.PreviousProjectData);
   const fetchedPreviousProjects = props.PreviousProjectData;
   return (
     <div>

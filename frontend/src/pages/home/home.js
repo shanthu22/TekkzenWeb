@@ -1,13 +1,21 @@
 import React from "react";
 import CustomNavbar from "../../components/navbar/navbar";
 import Footer from "../../components/footer/footer";
-import PP1 from "../../assets/PreviousProjects/PP1.png";
+import "./home.css";
 import PP2 from "../../assets/PreviousProjects/PP2.png";
 import PreviousProject from "../../components/portfolio/previousProject";
-import { Container } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import Procedure from "../../components/procedure/procedure";
+import { useNavigate } from "react-router-dom";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 const Home = () => {
   const PreviousProjectData = [
+    {
+      image: PP2,
+      name: "Entertaiment Service  ",
+      description:
+        " Entertainment Service Dashboard, a comprehensive platform designed to empower users in effortlessly managing package credentials and associated costs. This centralized hub ensures a seamless and efficient experience, allowing users to have complete control over their entertainment service subscriptions.",
+    },
     {
       image: PP2,
       name: "Entertaiment Service  ",
@@ -41,7 +49,11 @@ const Home = () => {
         " We measure our success by the satisfaction of our clients. Our goal is to not just meet your expectations but exceed them.",
     },
   ];
-
+  const navigate = useNavigate();
+  const HandleClick = (name) => {
+    console.log(name);
+    navigate("/" + name);
+  };
   return (
     <div style={{ font: "16px  Roboto, Helvetica,Arial, sans-serif " }}>
       <CustomNavbar />
@@ -66,6 +78,9 @@ const Home = () => {
         Our clients love what we do because we always deliver top-notch work.
         Take a look at some of our best projects!
       </p>
+      <Button onClick={() => HandleClick("portfolio")} variant='dark'>
+        Explore Our Projects <ArrowForwardIcon />
+      </Button>
       <Container
         style={{
           display: "flex",
