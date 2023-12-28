@@ -36,7 +36,6 @@ const Portfolio = () => {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "space-evenly",
-          nargin: "0px",
         }}>
         <PreviousProject PreviousProjectData={PreviousProjectData} />
       </Container>

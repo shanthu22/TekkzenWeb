@@ -1,6 +1,6 @@
 import React from "react";
 import CustomNavbar from "../../components/navbar/navbar";
-
+import TeamMembers from "../../components/TeamMembers/teamMembers";
 const HowWeWork = () => {
   return (
     <div>

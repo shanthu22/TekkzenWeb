@@ -16,6 +16,12 @@ const Home = () => {
       description:
         " Entertainment Service Dashboard, a comprehensive platform designed to empower users in effortlessly managing package credentials and associated costs. This centralized hub ensures a seamless and efficient experience, allowing users to have complete control over their entertainment service subscriptions.",
     },
+    {
+      image: PP2,
+      name: "Entertaiment Service  ",
+      description:
+        " Entertainment Service Dashboard, a comprehensive platform designed to empower users in effortlessly managing package credentials and associated costs. This centralized hub ensures a seamless and efficient experience, allowing users to have complete control over their entertainment service subscriptions.",
+    },
   ];
   const procedureData = [
     {

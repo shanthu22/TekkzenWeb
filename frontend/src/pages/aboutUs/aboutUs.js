@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { Col, Container, Row } from "react-bootstrap";
 import aboutus from "../../assets/about-us/about-us.gif";
 import Footer from "../../components/footer/footer";
+import TeamMembers from "../../components/TeamMembers/teamMembers";
 const AboutUs = () => {
   return (
     <div style={{ font: "16px  Roboto, Helvetica,Arial, sans-serif " }}>
@@ -20,11 +21,16 @@ const AboutUs = () => {
               experience that converts into paying customers.
             </p>
           </Col>
+
           <Col className='aboutUs-Img'>
             <img src={aboutus}></img>
           </Col>
         </Row>
       </Container>
+
+      <TeamMembers />
+
+      <Footer />
     </div>
   );
 };
