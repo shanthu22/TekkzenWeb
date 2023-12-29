@@ -39,8 +39,11 @@ const CustomNavbar = ({ navbarCallBack }) => {
             <Nav.Link onClick={() => handleClick("about-us")}>
               About Us
             </Nav.Link>
-            <Nav.Link onClick={() => handleClick("how-we-work")}>
+            {/* <Nav.Link onClick={() => handleClick("how-we-work")}>
               How we work
+            </Nav.Link> */}
+            <Nav.Link onClick={() => handleClick("portfolio")}>
+              Portfolio
             </Nav.Link>
           </Nav>
           <Button onClick={() => handleClick("contact-us")} variant='dark'>
