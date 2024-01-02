@@ -1,11 +1,18 @@
+
 .ContactUs{
+margin: 10vh 5vw;
+}
+.ContactUs_card{
     display: flex;
     justify-content: space-evenly;
 }
 
 
 .Card_HealthSupport{
-    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0px 15px;
     padding: 15px;
     background-color: whitesmoke;
     border-top: 8px solid #15c39a ;
@@ -13,24 +20,47 @@
 }
 
 .Card_Sales{
-    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0px 15px;
     padding: 15px;
     background-color: whitesmoke;
     border-top: 8px solid #4a6ee0 ;
     border-radius: 8px
 }
+.Card_HealthSupport_btn{
+    background-color: rgb(22, 155, 124);
+    border:#169b7c;
+    border-radius: 5px;
+    padding: 6px 10px;
+    color: white;
+    
+}
+.Card_Sales_btn{ background-color:rgb(49, 88, 216);
+    border: rgb(26, 91, 187);
+    border-radius: 5px;
+    padding: 6px 10px;
+    color: white;}
 
-@media  (max-width:425px) {
-    .ContactUs{
+@media  (max-width:450px) {
+    .ContactUs_card{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
     .Card_HealthSupport{
-        margin: 15px;
+        margin: 15px 0px;
         padding: 15px;
         background-color: whitesmoke;
         border-top: 8px solid #15c39a ;
+        border-radius: 8px
+    }
+    .Card_Sales{
+        margin: 15px 0px;
+        padding: 15px;
+        background-color: whitesmoke;
+        border-top: 8px solid #4a6ee0 ;
         border-radius: 8px
     }
 }
