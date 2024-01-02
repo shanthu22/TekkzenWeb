@@ -51,9 +51,9 @@ const Home = () => {
   return (
     <div style={{ font: "16px  Roboto, Helvetica,Arial, sans-serif " }}>
       <CustomNavbar />
-      <h2 style={{ padding: "0px 12px" }}>
+      <h1 style={{ padding: "25px 20px", fontWeight: "700" }}>
         We bring your concepts and ideas to life
-      </h2>
+      </h1>
 
       <p style={{ textAlign: "center", margin: "12px" }}>
         Our experts craft innovative, scalable solutions for Startups and
