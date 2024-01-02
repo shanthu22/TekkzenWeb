@@ -15,7 +15,7 @@ const CustomNavbar = ({ navbarCallBack }) => {
     try {
       //navbarCallBack(name);
       navigate("/" + name);
-      console.log("Connection is Successful");
+      //console.log("Connection is Successful");
     } catch (error) {
       console.log(error);
     }
