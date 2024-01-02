@@ -2,6 +2,7 @@ import React from "react";
 import CustomNavbar from "../../components/navbar/navbar";
 import Footer from "../../components/footer/footer";
 import { Button, Container } from "react-bootstrap";
+import SendUsMessage from "../../components/sendUsMessage/sendUsMessage";
 import "./contactUs.css";
 const ContactUs = () => {
   return (
@@ -10,7 +11,7 @@ const ContactUs = () => {
       <div className='ContactUs'>
         <h2>CONTACT US PAGE </h2>
         <p>Have any questions? We'd love to hear from you.</p>
-        <div className='ContactUs_card'>
+        <div className='ContactUs_cuard'>
           <div className='Card_HealthSupport'>
             <h3>Help & Support</h3>
             <p>
@@ -33,7 +34,9 @@ const ContactUs = () => {
             </button>
           </div>
         </div>
+        <SendUsMessage />
       </div>
+
       <Footer />
     </div>
   );
