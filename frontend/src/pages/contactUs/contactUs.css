@@ -1,0 +1,36 @@
+.ContactUs{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.Card_HealthSupport{
+    margin: 15px;
+    padding: 15px;
+    background-color: whitesmoke;
+    border-top: 8px solid #15c39a ;
+    border-radius: 8px
+}
+
+.Card_Sales{
+    margin: 15px;
+    padding: 15px;
+    background-color: whitesmoke;
+    border-top: 8px solid #4a6ee0 ;
+    border-radius: 8px
+}
+
+@media  (max-width:425px) {
+    .ContactUs{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .Card_HealthSupport{
+        margin: 15px;
+        padding: 15px;
+        background-color: whitesmoke;
+        border-top: 8px solid #15c39a ;
+        border-radius: 8px
+    }
+}
