@@ -11,7 +11,7 @@ const ContactUs = () => {
       <div className='ContactUs'>
         <h2>CONTACT US PAGE </h2>
         <p>Have any questions? We'd love to hear from you.</p>
-        <div className='ContactUs_cuard'>
+        <div className='ContactUs_card'>
           <div className='Card_HealthSupport'>
             <h3>Help & Support</h3>
             <p>
@@ -29,9 +29,9 @@ const ContactUs = () => {
             <p>
               Get in touch with our sales team to see how we can work together.
             </p>
-            <button href='mailto:sales@tekkzen.com' className='Card_Sales_btn'>
+            <div href='mailto:sales@tekkzen.com' className='Card_Sales_btn'>
               sales@tekkzen.com
-            </button>
+            </div>
           </div>
         </div>
         <SendUsMessage />
