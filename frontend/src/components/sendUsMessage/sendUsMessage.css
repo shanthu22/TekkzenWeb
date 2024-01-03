@@ -1,0 +1,52 @@
+.sendUsMessage{
+font: 16px; 
+padding: 5vw;
+}
+.sendUsMessage> h2{
+    font-weight: 700
+}
+.sendUsMessage_form{ 
+    display: flex;
+   
+    text-align: left;
+    flex-direction: column;
+
+}
+.sendUsMessage_form >Button {
+    margin: 16px 0px 0px 0px;
+}
+.sendUsMessage_form_basic{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.sendUsMessage_form_element{
+ margin: 12px 5px ;
+    display: flex;
+    flex-direction: column;
+}
+.sendUsMessage_form_element > label{
+  font-size: 16px;
+  font-weight: 500;
+   }
+.sendUsMessage_form_element > input {
+    /* background-color: brown; */
+    margin: 12px 0px 0px 0px ;
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-left:none;
+    border-right: none;
+}
+
+@media (max-width:780px) {
+    .sendUsMessage_form_basic{
+        /* background-color: aquamarine; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0px 5vw;
+        
+    }
+}
