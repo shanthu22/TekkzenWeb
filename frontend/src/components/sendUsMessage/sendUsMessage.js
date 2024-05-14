@@ -3,8 +3,8 @@ import "./sendUsMessage.css";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { Button } from "react-bootstrap";
 const SendUsMessage = () => {
-  //testing git branch
-  //tetsing again
+  //git testing
+
   return (
     <div className='sendUsMessage'>
       <h2> Send us a message</h2>
