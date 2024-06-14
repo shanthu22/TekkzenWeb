@@ -1,7 +1,7 @@
 import React from "react";
 import "./aboutUs.css";
 
-import TZnavbar from "../../components/atoms/TZnavbar/TZnavbar";
+import TZnavbar from "../../components/molecules/TZnavbar/TZnavbar";
 import { useNavigate } from "react-router-dom";
 import { Col, Container, Row } from "react-bootstrap";
 import aboutus from "../../assets/about-us/about-us.gif";
@@ -59,7 +59,7 @@ const AboutUs = () => {
 
       <Container>
         <Row>
-          <Col className='aboutUs-Top'>
+          <Col className="aboutUs-Top">
             <h2>Tekkzen Mission </h2>
             <p>
               Our mission is to make websites convert better with the help of
@@ -68,7 +68,7 @@ const AboutUs = () => {
             </p>
           </Col>
 
-          <Col className='aboutUs-Img'>
+          <Col className="aboutUs-Img">
             <img src={aboutus}></img>
           </Col>
         </Row>

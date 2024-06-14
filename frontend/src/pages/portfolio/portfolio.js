@@ -1,5 +1,5 @@
 import React from "react";
-import TZnavbar from "../../components/atoms/TZnavbar/TZnavbar";
+import TZnavbar from "../../components/molecules/TZnavbar/TZnavbar";
 import Footer from "../../components/footer/footer";
 
 import PP2 from "../../assets/PreviousProjects/PP2.png";
