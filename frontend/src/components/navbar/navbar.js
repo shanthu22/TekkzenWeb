@@ -7,25 +7,21 @@ import Logo from "../../assets/logo.png";
 import Button from "react-bootstrap/Button";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { useNavigate } from "react-router-dom";
+
 const CustomNavbar = ({ navbarCallBack }) => {
-  //const { navbarCallBack } = props;
   const navigate = useNavigate();
   const handleClick = (name) => {
-    //  console.log("im trying to connect is :-" + name);
     try {
-      //navbarCallBack(name);
       navigate("/" + name);
-      //console.log("Connection is Successful");
     } catch (error) {
       console.log(error);
     }
-
-    // navigate("/" + e.target.name);
   };
+
   return (
-    <Navbar expand='lg' style={{ "background-color": "whitesmoke" }}>
+    <Navbar expand='lg' style={{ backgroundColor: "#1B263B" }}>
       <Container>
-        <Navbar.Brand role='button' style={{}} onClick={(e) => handleClick("")}>
+        <Navbar.Brand role='button' onClick={(e) => handleClick("")}>
           <Image
             style={{ width: "150px", height: "auto" }}
             src={Logo}
@@ -33,20 +29,25 @@ const CustomNavbar = ({ navbarCallBack }) => {
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
-        <Navbar.Collapse id='basic-navbar-nav'>
+        <Navbar.Collapse id='basic-navbar-nav' variant='light'>
           <Nav className='me-auto'>
-            <Nav.Link onClick={() => handleClick("")}>Home</Nav.Link>
-            <Nav.Link onClick={() => handleClick("about-us")}>
+            <Nav.Link
+              style={{ color: "white" }}
+              onClick={() => handleClick("")}>
+              Home
+            </Nav.Link>
+            <Nav.Link
+              style={{ color: "white" }}
+              onClick={() => handleClick("about-us")}>
               About Us
             </Nav.Link>
-            {/* <Nav.Link onClick={() => handleClick("how-we-work")}>
-              How we work
-            </Nav.Link> */}
-            <Nav.Link onClick={() => handleClick("portfolio")}>
+            <Nav.Link
+              style={{ color: "white" }}
+              onClick={() => handleClick("portfolio")}>
               Portfolio
             </Nav.Link>
           </Nav>
-          <Button onClick={() => handleClick("contact-us")} variant='dark'>
+          <Button onClick={() => handleClick("contact-us")} variant='light'>
             Talk to us <ArrowForwardIcon />
           </Button>
         </Navbar.Collapse>
