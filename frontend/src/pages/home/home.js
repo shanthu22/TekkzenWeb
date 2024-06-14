@@ -1,5 +1,5 @@
 import React from "react";
-import CustomNavbar from "../../components/navbar/navbar";
+
 import Footer from "../../components/footer/footer";
 import "./home.css";
 import PP2 from "../../assets/PreviousProjects/PP2.png";
@@ -8,6 +8,7 @@ import { Button, Container } from "react-bootstrap";
 import Procedure from "../../components/procedure/procedure";
 import { useNavigate } from "react-router-dom";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import TZnavbar from "../../components/atoms/TZnavbar/TZnavbar";
 const Home = () => {
   const PreviousProjectData = [
     {
@@ -50,7 +51,7 @@ const Home = () => {
   };
   return (
     <div style={{ font: "16px  Roboto, Helvetica,Arial, sans-serif " }}>
-      <CustomNavbar />
+      <TZnavbar />
       <h1 style={{ padding: "25px 20px", fontWeight: "700" }}>
         We bring your concepts and ideas to life
       </h1>

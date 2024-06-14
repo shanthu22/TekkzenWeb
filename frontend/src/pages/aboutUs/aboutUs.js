@@ -1,6 +1,7 @@
 import React from "react";
 import "./aboutUs.css";
-import CustomNavbar from "../../components/navbar/navbar";
+
+import TZnavbar from "../../components/atoms/TZnavbar/TZnavbar";
 import { useNavigate } from "react-router-dom";
 import { Col, Container, Row } from "react-bootstrap";
 import aboutus from "../../assets/about-us/about-us.gif";
@@ -54,7 +55,7 @@ const AboutUs = () => {
   ];
   return (
     <div style={{ font: "16px  Roboto, Helvetica,Arial, sans-serif " }}>
-      <CustomNavbar />
+      <TZnavbar />
 
       <Container>
         <Row>

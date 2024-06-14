@@ -1,5 +1,5 @@
 import React from "react";
-import CustomNavbar from "../../components/navbar/navbar";
+import TZnavbar from "../../components/atoms/TZnavbar/TZnavbar";
 import Footer from "../../components/footer/footer";
 
 import PP2 from "../../assets/PreviousProjects/PP2.png";
@@ -18,7 +18,7 @@ const Portfolio = () => {
 
   return (
     <div>
-      <CustomNavbar />
+      <TZnavbar />
       <Container
         style={{
           display: "flex",

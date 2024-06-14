@@ -1,0 +1,112 @@
+.TZnavbar{
+    background-color:  #1B263B;
+    height:auto ;
+    width: 100%;
+ padding: 0px;
+ margin: 0px;
+    
+}
+.TZnavbar_elements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    padding-right: 10px;
+   
+}
+.TZnavbar_middle{
+    flex:.25;
+}
+.TZnavbar_right{
+    flex:.50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Link{
+   color: white;
+   padding: 5px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 400;
+   font-size: 15px;
+   
+}
+.Link:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+    color: #ff135a;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+.navbar_logo{
+   
+    flex:.25;
+    height: 100px;
+    width: 200px;
+    object-fit: contain;
+   
+}
+.navbar_logo:hover{
+    cursor: pointer;
+transform: scale(1.2);
+transition: 0.5s;
+}
+
+.navbar_logo > img{
+    height: 100px;
+    width: 200px;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 800px) {
+    .navbar_logo{
+        margin-left:10px;
+       
+    }
+    
+
+    .TZnavbar_right {
+      display: none; /* Initially hide the menu items */
+      flex-direction: column; /* Arrange items vertically */
+      position: absolute;
+      background-color: #1b263b;
+      width: 100%;
+      top: 100px; /* Adjust based on your navbar height */
+      left: 0;
+      padding: 20px;
+      box-sizing: border-box;
+      margin: 0px;
+    }
+  
+    .TZnavbar_right.active {
+      display: flex; /* Show the menu items when active */
+    }
+  
+    .TZnavbar_elements {
+      position: relative; /* Ensure relative position for absolutely positioned children */
+    }
+  
+    .burger-icon {
+      margin-right: 10px;
+      display: block; /* Display burger icon by default */
+      cursor: pointer;
+      font-size: 24px;
+      z-index: 2; /* Ensure it is above other elements */
+      color: white;
+    }
+    .navbar_logo:hover{
+        cursor: pointer;
+    transform:scale(0.9,0.9);
+    transition: 0.5s;
+    }
+    
+  }
+  
+  @media screen and (min-width: 801px) {
+    .burger-icon {
+      display: none; /* Hide burger icon for larger screens */
+    }
+ 
+
+  }

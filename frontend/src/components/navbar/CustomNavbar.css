@@ -1,0 +1,104 @@
+/* CustomNavbar.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #1B263B;
+    padding: 1rem;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .navbar-brand {
+    cursor: pointer;
+  }
+  
+  .logo {
+    width: 150px;
+    height: auto;
+  }
+  
+  .navbar-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .navbar-collapse {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .nav-item {
+    margin-right: 1rem;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .nav-link:hover {
+    color: #f8f9fa; /* Optional: slightly lighter white on hover */
+  }
+  
+  .btn {
+    background-color: white;
+    color: #1B263B;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .arrow {
+    margin-left: 0.5rem;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar-collapse {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .navbar-toggle {
+      display: block;
+    }
+  
+    .navbar-collapse.open {
+      display: flex;
+    }
+  
+    .nav-item {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  
+    .btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  
