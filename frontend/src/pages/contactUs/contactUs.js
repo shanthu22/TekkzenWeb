@@ -1,5 +1,5 @@
 import React from "react";
-import CustomNavbar from "../../components/navbar/navbar";
+import TZnavbar from "../../components/atoms/TZnavbar/TZnavbar";
 import Footer from "../../components/footer/footer";
 import { Button, Container } from "react-bootstrap";
 import SendUsMessage from "../../components/sendUsMessage/sendUsMessage";
@@ -11,7 +11,7 @@ const ContactUs = () => {
 
   return (
     <div>
-      <CustomNavbar />
+      <TZnavbar />
       <div className='ContactUs'>
         <h2>Let’s Talk. </h2>
         <p>Have any questions? We'd love to hear from you.</p>
