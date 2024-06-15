@@ -1,0 +1,30 @@
+.Clients {
+    background-color:  #1B263B;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width:100%;
+    overflow: hidden;  
+  }
+  
+  .Clients_cards {
+    display: flex;
+    width: fit-content;
+    animation: scroll-horizontal 15s linear infinite;
+    animation-play-state: running;
+  }
+
+  .Clients:hover .Clients_cards {
+    animation-play-state: paused;
+  }
+
+  @keyframes scroll-horizontal {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+

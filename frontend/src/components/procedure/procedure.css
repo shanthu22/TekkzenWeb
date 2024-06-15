@@ -1,13 +1,11 @@
 .procedure{
-    /* display: flex;  */
+   width: 100%;
     background-color: #1B263B;
     color: white; 
     border-radius: 5px;
-    margin: 12px;
-    padding: 20px 15px;
+    padding: 20px 20px;
     font:16px  Roboto, Helvetica,Arial, sans-serif;
-    
-    
+
 }
 
 .procedure-step{
@@ -44,7 +42,7 @@
 }
 
 
-@media(max-width:500px){
+@media(max-width:570px){
     .procedure-step{
         display: flex;
         flex-wrap: wrap;
@@ -53,12 +51,14 @@
     }
     .procedure{
         color: white; 
-        border-radius: 0px;
+        /* border-radius: 0px; */
+        padding: 15px 5px;
     }
     .procedure-step-count{
-        border: 2px solid rgb(240, 0, 0);
+        /* border: 2px solid rgb(240, 0, 0); */
         border-radius: 50%;
         margin:10px 0px 10px 0px ;
     }
     
 }
+

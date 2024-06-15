@@ -9,6 +9,7 @@ import Procedure from "../../components/procedure/procedure";
 import { useNavigate } from "react-router-dom";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import TZnavbar from "../../components/molecules/TZnavbar/TZnavbar";
+import Clients from "../../components/molecules/clients/Clients";
 const Home = () => {
   const PreviousProjectData = [
     {
@@ -85,6 +86,8 @@ const Home = () => {
         }}>
         <PreviousProject PreviousProjectData={PreviousProjectData} />
       </Container>
+
+      <Clients />
       <Footer />
     </div>
   );
