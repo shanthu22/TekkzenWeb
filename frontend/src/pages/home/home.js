@@ -8,7 +8,8 @@ import { Button, Container } from "react-bootstrap";
 import Procedure from "../../components/procedure/procedure";
 import { useNavigate } from "react-router-dom";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import TZnavbar from "../../components/atoms/TZnavbar/TZnavbar";
+import TZnavbar from "../../components/molecules/TZnavbar/TZnavbar";
+import Clients from "../../components/molecules/clients/Clients";
 const Home = () => {
   const PreviousProjectData = [
     {
@@ -73,7 +74,7 @@ const Home = () => {
         Our clients love what we do because we always deliver top-notch work.
         Take a look at some of our best projects!
       </p>
-      <Button onClick={() => HandleClick("portfolio")} variant='dark'>
+      <Button onClick={() => HandleClick("portfolio")} variant="dark">
         Explore Our Projects <ArrowForwardIcon />
       </Button>
       <Container
@@ -85,6 +86,8 @@ const Home = () => {
         }}>
         <PreviousProject PreviousProjectData={PreviousProjectData} />
       </Container>
+
+      <Clients />
       <Footer />
     </div>
   );
