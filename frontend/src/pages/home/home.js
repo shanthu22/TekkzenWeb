@@ -22,29 +22,42 @@ const Home = () => {
   const procedureData = [
     {
       stepCount: "01",
-      stepName: "Expertise ",
+      stepName: "Initial Meeting & Drafting SRS",
       stepDescription:
-        " Our team is made up of highly skilled professionals who live and  breathe design, development, and user experience. We're passionate  about what we do, and it shows in our work.",
+        "We'll kick things off with an initial meeting to understand your needs and goals. From this discussion, we'll draft the first version of the Software Requirements Specification (SRS) to outline the project's scope.",
     },
     {
       stepCount: "02",
-      stepName: "Tailored Solutions ",
+      stepName: "Finalizing SRS & Quotation",
       stepDescription:
-        " We don't believe in a one-size-fits-all approach. We take the time to understand your unique needs and goals and create a customized solution that fits your budget and exceeds your expectations.",
+        "Next, we'll work together to finalize the SRS, ensuring it covers all your requirements. Once we're aligned, we'll provide you with a detailed quotation for the project.",
     },
     {
       stepCount: "03",
-      stepName: "Results-Driven ",
+      stepName: "Creating a Delivery Plan",
       stepDescription:
-        "At the end of the day, what matters most is results. We are dedicated to delivering measurable results that drive your business forward. ",
+        "With the finalized SRS in hand, we'll create a delivery plan tailored to your preferences. Whether you prefer an Agile approach for iterative development or a Waterfall model for a single final delivery, we've got you covered.",
     },
     {
       stepCount: "04",
-      stepName: "Client Satisfaction ",
+      stepName: "Development",
       stepDescription:
-        " We measure our success by the satisfaction of our clients. Our goal is to not just meet your expectations but exceed them.",
+        "Our expert team will then get to work on developing your software. During this phase, we adhere closely to the specifications we've agreed upon, ensuring that every detail is meticulously crafted. We employ the latest technologies and best practices to build a robust and scalable solution. Throughout the development process, we maintain transparent communication, providing regular updates and incorporating your feedback to make sure the project stays on track and aligns with your vision.",
+    },
+    {
+      stepCount: "05",
+      stepName: "Testing & Quality Assurance",
+      stepDescription:
+        "Before we launch, we'll thoroughly test the software to ensure it's reliable, free of bugs, and meets all your requirements. Quality is our top priority.",
+    },
+    {
+      stepCount: "06",
+      stepName: "Delivery & Support",
+      stepDescription:
+        "Finally, we'll deliver the completed product and provide ongoing support to make sure everything runs smoothly and meets your expectations.",
     },
   ];
+
   const navigate = useNavigate();
   const HandleClick = (name) => {
     console.log(name);
@@ -65,7 +78,7 @@ const Home = () => {
 
       <Procedure procedureData={procedureData} />
 
-      <h2>Our Best Projects </h2>
+      {/* <h2>Our Best Projects </h2>
       <p
         style={{
           textAlign: "center",
@@ -85,7 +98,7 @@ const Home = () => {
           nargin: "0px",
         }}>
         <PreviousProject PreviousProjectData={PreviousProjectData} />
-      </Container>
+      </Container> */}
 
       <Clients />
       <Footer />

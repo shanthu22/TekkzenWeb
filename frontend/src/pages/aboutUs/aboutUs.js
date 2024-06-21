@@ -15,7 +15,7 @@ const AboutUs = () => {
     {
       profileImage: s0001,
       Id: "0001",
-      name: "Shanthu  ",
+      name: "Shanthu",
       role: "Founder / Software Engineer",
       statement:
         " As the founder of Tekkzen and a software engineer, my mission is to drive business success through innovative tech solutions. I am dedicated to crafting robust software that contributes to our clients business  growth",
@@ -23,7 +23,7 @@ const AboutUs = () => {
     {
       profileImage: null,
       Id: "0002",
-      name: "Emma",
+      name: "K Emma",
       role: "Technical Counsultant",
       statement:
         " Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -37,21 +37,21 @@ const AboutUs = () => {
         " Some quick example text to build on the card title and make up the bulk of the card's content.",
     },
     {
-      profileImage: v0004,
+      profileImage: null,
       Id: "0004",
       name: "W Vibeeshan ",
       role: "Software Engineer",
       statement:
         " Proficient in Front-End Design and Web Development, Transforming Concepts into Visually Stunning and Functionally Robust Websites.",
     },
-    {
-      profileImage: null,
-      Id: "0005",
-      name: "Naomi",
-      role: "Software Engineer QA",
-      statement:
-        " Some quick example text to build on the card title and make up the bulk of the card's content.",
-    },
+    // {
+    //   profileImage: null,
+    //   Id: "0005",
+    //   name: "Naomi",
+    //   role: "Software Engineer QA",
+    //   statement:
+    //     " Some quick example text to build on the card title and make up the bulk of the card's content.",
+    // },
   ];
   return (
     <div style={{ font: "16px  Roboto, Helvetica,Arial, sans-serif " }}>
