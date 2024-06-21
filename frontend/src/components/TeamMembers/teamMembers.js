@@ -12,7 +12,7 @@ const TeamMembers = (props) => {
   return (
     <div
       style={{
-        backgroundColor: " rgb(39, 39, 39)",
+        backgroundColor: "  #1B263B",
         color: "white",
         padding: "20px",
       }}>
@@ -34,7 +34,7 @@ const TeamMembers = (props) => {
               }}>
               {item.profileImage == null ? (
                 <Card.Img
-                  variant='top'
+                  variant="top"
                   style={{
                     height: "382px",
                     width: "288px",
@@ -44,7 +44,7 @@ const TeamMembers = (props) => {
                 />
               ) : (
                 <Card.Img
-                  variant='top'
+                  variant="top"
                   style={{
                     height: "382px",
                     width: "288px",
