@@ -67,7 +67,8 @@ const Home = () => {
     <div style={{ font: "16px  Roboto, Helvetica,Arial, sans-serif " }}>
       <TZnavbar />
       <h1 style={{ padding: "25px 20px", fontWeight: "700" }}>
-        We bring your concepts and ideas to life
+        {/* We bring your concepts and ideas to life */}
+        Check cicd
       </h1>
 
       <p style={{ textAlign: "center", margin: "12px" }}>
